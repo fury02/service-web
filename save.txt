@@ -1,0 +1,42 @@
+{
+  "canisters": {
+    "dbs": {
+      "main": "src/dbs/service-2.mo",
+      "type": "motoko"
+    },
+    "fb": {
+      "main": "src/dbs/buckets/files-buckets-2.mo",
+      "type": "motoko"
+    },
+    "ttbs": {
+       "main": "src/dbs/test/test-table-datastorage-service.mo",
+       "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "vessel-linux64 sources"
+    }
+  },
+  "dfx": "0.9.0",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "ic_localhost": {
+    "local": {
+      "bind": "http://127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "ic_network": {
+    "ic": {
+      "bind": "https://boundary.ic0.app",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
